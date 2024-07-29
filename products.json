@@ -1,0 +1,17 @@
+[
+  {
+    "productId": 4321,
+    "productName": "Iphone15",
+    "price": 75456.5
+  },
+  {
+    "productId": 3242,
+    "productName": "OnePlus12R",
+    "price": 65456.5
+  },
+  {
+    "productId": 3421,
+    "productName": "SamsungFlip",
+    "price": 85456.5
+  }
+]
