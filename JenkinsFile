@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stage('Integration Test') {
+        stage('Unit Test') {
             steps {
                 // Run Maven on a Unix agent.
                 script{
@@ -29,6 +29,19 @@ pipeline {
                         bat "pytest"
                     }
                 }
+            }
+        }
+        stage('Docker Build') {
+            steps {
+                script{
+                if(isUnix()){
+                sh "docker build -t  sumit759/FlaskProjectDemo ."
+                }
+                else{
+                 bat "docker build -t sumit759/FlaskProjectDemo ."
+                 }
+                 }
+
             }
         }
     }
