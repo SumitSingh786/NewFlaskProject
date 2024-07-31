@@ -38,7 +38,7 @@ pipeline {
                 sh "docker build -t  sumit759/FlaskProjectDemo ."
                 }
                 else{
-                 bat "docker build -t sumit759/FlaskProjectDemo ."
+                 bat "docker build -t sumit759/flaskprojectdemo ."
                  }
                  }
 
